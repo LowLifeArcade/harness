@@ -1,0 +1,27 @@
+{
+  "name": "lowlife-arcade",
+  "description": "An arcade-styled AI web app builder that targets Cloudflare by default.",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "bin": {
+    "lowlife-arcade": "./index.ts"
+  },
+  "scripts": {
+    "start": "bun run index.ts",
+    "dev": "bun --watch index.ts",
+    "debug": "LOWLIFE_DEBUG=1 bun run index.ts",
+    "typecheck": "bunx tsc --noEmit",
+    "test": "bun test"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "wrangler": "^4.113.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@opentui/core": "^0.4.4"
+  }
+}
