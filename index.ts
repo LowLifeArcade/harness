@@ -1,4 +1,4 @@
 #!/usr/bin/env bun
-import { startTui } from "./src/ui"
+import { startTui } from './src/ui';
 
-await startTui()
+await startTui();
